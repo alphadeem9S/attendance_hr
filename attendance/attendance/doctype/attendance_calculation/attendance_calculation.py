@@ -3,8 +3,6 @@
 
 # import frappe
 from babel.dates import format_date
-from erpnext.hr.doctype.holiday_list.holiday_list import HolidayList
-from erpnext.hr.doctype.leave_application.leave_application import get_leave_balance_on, is_lwp
 import frappe
 from frappe import _, has_permission, msgprint, new_doc
 from frappe.model.document import Document
@@ -12,8 +10,6 @@ from dateutil.parser import parse
 # from frappe.query_builder.utils import DocType
 from frappe.sessions import get
 from frappe.utils import to_timedelta, add_days, nowdate, get_link_to_form
-# from erpnext.hr.doctype.shift_assignment.shift_assignment import get_shift_details
-from erpnext.hr.doctype.employee.employee import get_holiday_list_for_employee, is_holiday
 from datetime import datetime, timedelta, date, time
 # from erpnext.payroll.doctype.salary_structure_assignment.salary_structure_assignment import get_assigned_salary_structure
 from frappe.utils.data import flt, getdate
